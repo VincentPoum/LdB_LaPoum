@@ -25,12 +25,13 @@ SECRET_KEY = 'lu6v3!%$a-*4poyjcwsug4dr$$tp(qvxt+z)4p#&^-r^n!*)!0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['lapoumerole.alwaysdata.net']
+ALLOWED_HOSTS = ['lapoumerole.alwaysdata.net','127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'LivreDeBord.apps.LivredebordConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -103,9 +104,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fr-fr'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Paris'
 
 USE_I18N = True
 
