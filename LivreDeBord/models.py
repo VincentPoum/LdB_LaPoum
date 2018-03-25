@@ -7,6 +7,8 @@ class Evenement(models.Model):
         
     def __str__(self):
         return self.date_event.strftime('%Y/%m/%d')
+    def str_frise(self):
+        return '"year":"'+self.date_event.strftime('%Y')+'","month":"'+self.date_event.strftime('%m')+'","day":"'+self.date_event.strftime('%d')+'"'
     
 class Histoire(models.Model):
     lien_event = models.ForeignKey(Evenement, on_delete=models.CASCADE)
